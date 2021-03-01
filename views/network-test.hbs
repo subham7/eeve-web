@@ -1,0 +1,231 @@
+<!--Page Title-->
+<section class="page-title" style="background-image:url(assets/images/background/misc.jpg);">
+  <div class="auto-container">
+    <span class="float-text">Network</span>
+    <h1>Our Network</h1>
+    <p class="c-white">
+      #RideIntoTheFuture by visiting one of our EeVe India outlets closest to you! Take a test ride, we promise to keep
+      you
+      interested.<br />
+
+      We look to grow our electric automotive franchise through dealership deals. Feel free to connect with us
+
+    </p>
+    <!-- <ul class="bread-crumb clearfix">
+      <li>
+        <a href="/">Home </a>
+      </li>
+      <li>Network</li>
+    </ul> -->
+  </div>
+</section>
+<!--End Page Title-->
+
+{{!--
+<section class="collaborate-text">
+  <h4>While EeVe aims to build global products that allow a sustainable yet smarter future, like all great brands, we need strong
+    collaborations too. If we crossed your mind, we're already at a good start for a greater collaboration. It's about time
+    you grow with EeVe too. Drop us a hi!</h4>
+</section> --}}
+
+<section class="location-section-two style-three network-contact">
+  <div class="auto-container">
+    {{!-- <div id="map" style="height: 500px; width: 100%;"></div> --}}
+    {{!-- <iframe frameborder=0 style='width:100%;height:500px;' src='//www.zeemaps.com/pub?group=3594088'> </iframe> --}}
+    <div class="row">
+      <div class="info-block col-lg-12 col-md-12 col-sm-12">
+        <h2>Regional Dealer Network</h2><br>
+      </div>
+      <!-- Info Block -->
+      {{#each data}}
+      <div class="info-block col-lg-4 col-md-6 col-sm-12 wow">
+        <div class="inner-box">
+          <div class="image-box">
+            <figure class="image">
+              <img src="assets/images/resource/vactor-2.png" alt="" />
+            </figure>
+          </div>
+          <div class="info-box">
+            <div class="desg">
+              <h5>{{trade_name}}</h5>
+              <small>{{location}}</small>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  State
+                </p>
+                <h6>{{state}}</h6>
+              </div>
+              <div class="col-md-12">
+                <p>Address</p>
+                <h6>{{address}}</h6>
+              </div>
+              {{!-- <div class="col-md-6">
+                <p>
+                  Contact
+                </p>
+                <h6>8895714483</h6>
+              </div>
+              <div class="col-md-12">
+                <p>
+                  DP Name
+                </p>
+                <h6>Mr. Rahul Kumar Gupta</h6>
+              </div>
+              <div class="col-md-12">
+                <p>
+                  Email
+                </p>
+                <h6>sakambariautomobiles@gmail.com</h6>
+              </div> --}}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+
+    </div>
+  </div>
+</section>
+
+<!-- Main Footer -->
+<div class="main-footer style-two">
+  <div class="anim-icons">
+    <span class="icon icon-twist-line-1 wow zoomIn"></span>
+    <span class="icon icon-circle-6 wow zoomIn" data-wow-delay="400ms"></span>
+    <span class="icon icon-twist-line-2 wow zoomIn" data-wow-delay="800ms"></span>
+    <span class="icon icon-circle-8 wow zoomIn" data-wow-delay="1200ms"></span>
+  </div>
+  <div class="auto-container">
+    <div class="sec-title text-center">
+      <span class="title">Get The Latest Updates</span>
+      <h2>Subscribe To Newsletter</h2>
+    </div>
+
+    <!--Newsletter Form-->
+    <div class="newsletter-form">
+      <form method="post" action="https://formspree.io/mevbrvbx">
+        <div class="form-group">
+          <input type="email" name="email" value="" placeholder="email@gmail.com" required />
+          <button type="submit" class="theme-btn btn-style-three">
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <ul>
+        <li>
+          <a href="https://facebook.com/eeveindia" target="_blank">
+            <span class="fab fa-facebook-f"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/eeveindia" target="_blank">
+            <span class="fab fa-twitter"></span>
+          </a>
+        </li>
+        <!-- <li>
+              <a href="#">
+                <span class="fab fa-dribbble"></span>
+              </a>
+            </li> -->
+        <li>
+          <a href="https://instagram.com/eeveindia" target="_blank">
+            <span class="fab fa-instagram"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/company/eeveindia" target="_blank">
+            <span class="fab fa-linkedin-in"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Footer Nav -->
+    <div class="footer-nav">
+      <ul>
+        <li>
+          <a href="/about" style="color: #12114a">About</a>
+        </li>
+
+        <li>
+          <a href="/contact" style="color: #12114a">Contact</a>
+        </li>
+        <li>
+          <a href="/faq" style="color: #12114a">FAQ</a>
+        </li>
+        <li>
+          <a href="/privacy" style="color: #12114a">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="/pressrelease" style="color: #12114a">Press Release</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom clearfix">
+      <div class="copyright">
+        EeVe India &copy; 2019. All Rights Reserved.
+      </div>
+      <!-- <ul>
+        <li>We Accept</li>
+        <li>
+          <a href="#">
+            <img src="assets/images/icons/cart-1.jpg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/icons/cart-2.jpg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/icons/cart-3.jpg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/images/icons/cart-4.jpg" alt="" />
+          </a>
+        </li>
+      </ul> -->
+    </div>
+    <!-- Copyright -->
+  </div>
+</div>
+<!-- End Footer -->
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html">
+  <span class="fa fa-angle-double-up"></span>
+</div>
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/script.js"></script>
+<!--Google Map APi Key-->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt3GuE1zdm-R0tNFdpcv7siklJ1iJp5fs
+  &callback=initMap">
+  </script>
+<script src="js/map-script.js"></script>
+<!--End Google Map APi-->
+</body>
+
+</html>

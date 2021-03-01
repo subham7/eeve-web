@@ -1,0 +1,40 @@
+{
+  "name": "eeve-website",
+  "version": "1.0.0",
+  "description": "Website for EeVe",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subham7/eeve-website.git"
+  },
+  "author": "Subham Sengupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subham7/eeve-website/issues"
+  },
+  "homepage": "https://github.com/subham7/eeve-website#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "async": "^2.6.0",
+    "axios": "^0.19.2",
+    "bluebird": "3.5.1",
+    "body-parser": "^1.19.0",
+    "color": "^3.1.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.0",
+    "express-handlebars": "^3.1.0",
+    "file-system": "^2.2.2",
+    "json2csv": "^4.5.2",
+    "nodemailer": "^6.2.1",
+    "path": "^0.12.7",
+    "promise-mysql": "3.2.1",
+    "razorpay": "^2.0.4",
+    "sqlstring": "^2.3.1"
+  }
+}

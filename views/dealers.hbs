@@ -1,0 +1,66 @@
+<div class="body-wrapper">
+  <section class="dealer-content">
+    <div class="row noPaddingMargin">
+      <div class="col-lg-6 dealer-content-ht c-green-bg">
+        <div class="vertical-center">
+          <h1 class="c-white bg-heading">Our Dealer</h1>
+          <h1 class="heavy-font c-blue">Network</h1>
+        </div>
+      </div>
+      <div class="col-lg-6 dealer-content-ht dealer-showroom"></div>
+    </div>
+
+    <div class="container dealer-navigate">
+
+      <form id="dealerForm">
+        <div class="row">
+          <div class="col-lg-6">
+            <p>State</p>
+            <select class="form-control form-control-lg" name="stateId">
+              <option></option>
+              {{#each state}}
+              <option value="{{id}}">{{state}}</option>
+              {{/each}}
+            </select><br>
+          </div>
+          <div class="col-lg-6">
+            <p>District</p>
+            <select class="form-control form-control-lg" name="distId">
+              <option></option>
+              {{#each district}}
+              <option value="{{id}}">{{name}}</option>
+              {{/each}}
+            </select><br>
+          </div>
+          <div class="col-lg-12">
+            <p id="dealerErrorMsg" style="color: red"></p>
+          </div>
+        </div>
+      </form>
+      <button class="btn c-green-bg" id="getLocation" id="dealerFormBtn">Find Dealer</button>
+      <br>
+      <hr><br>
+      <button class="btn c-green-bg" onclick="initMap()">See All Dealers</button>
+    </div>
+
+
+    <div id="map" style="height: 800px;width: 100%;"></div>
+  </section>
+</div>
+
+<!--Google Map APi Key-->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD378z_6KBKYSG3yfc6vqpMAfnnPLgLvHA
+  &callback=initMap">
+  </script>
+<script src="js/map-script.js"></script>
+<!--End Google Map APi-->
+<script>
+  (function () {
+    var a = document.createElement('script');
+    a.type = 'text/javascript';
+    a.async = !0;
+    a.src = 'https://cdn.storerocket.io/js/widget.js';
+    var b = document.getElementsByTagName('script')[0];
+    b.parentNode.insertBefore(a, b);
+  }());
+</script>

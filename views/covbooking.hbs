@@ -1,0 +1,167 @@
+<div class="body-wrapper">
+  <section class="booking-top-cov"></section>
+  <section class="booking-topcontent c-blue-bg">
+    <div class="container">
+      <h1 class="c-white">Book an <span class="heavy-font c-green">EeVe</span></h1>
+      <p class="para-sm c-white">Book EeVe YOUR or EeVe 4U at ₹299 and get total benefits worth ₹10K</p>
+      <p class="para-sm c-white">1. Upfront discount of <span class="heavy-font c-green">₹2000</span> when you purchase
+        your EeVe. <br>2. Get paid <span class="heavy-font c-green">₹1000</span> on your first 3 service visits.<br>
+        3. Complimentary insurance for 1 year.
+        <br>4. Premium feature IOT free for 1 whole year.
+
+        <br><br>
+        <a class="btn c-green-bg"
+          href="https://drive.google.com/file/d/1h22So77ewQc6IzxwSqiGlQ-6UzibTgRV/view?usp=sharing" target="_blank"
+          class="btn-link btn btn-sm">See Brochure</a>
+    </div>
+  </section>
+  <section class="booking-form">
+    <div class="container">
+      <form id="covbooking-form">
+        <h3 class="c-green heavy-font">Select Your Location</h3><br>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>State</label>
+            <select name="state" class="form-control" required>
+              <option value=""></option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Odisha">Odisha</option>
+              <option value="West Bengal">West Bengal</option>
+              <option value="Assam">Assam</option>
+              <option value="Chattisgarh">Chattisgarh</option>
+            </select>
+          </div>
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>City</label>
+            <input type="text" name="city" class="form-control" required />
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h3 class="c-green heavy-font">Personal Details</h3>
+        <p class="c-blue">Your personal details like email & Contact are very important. All the communication related
+          to your booking will be
+          made at your email, make sure to keep an eye.</p>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>First Name</label>
+            <input type="text" name="first_name" class="form-control" required />
+          </div>
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Last Name</label>
+            <input type="text" name="last_name" class="form-control" required />
+          </div>
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" required />
+          </div>
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Phone</label>
+            <input type="text" name="phone" class="form-control" minlength="10" maxlength="10" required />
+          </div>
+
+
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Address</label>
+            <input type="text" name="address" class="form-control" required />
+          </div>
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Pin</label>
+            <input type="text" name="pin" minlength="6" class="form-control" maxlength="6" required />
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h3 class="c-green heavy-font">Select Your Ride</h3>
+        <p class="c-blue">We've got you covered. Pick an EeVe that fits your needs.</p>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Model
+              {{!-- (<a data-toggle="modal" data-target="#pricing" style="cursor: pointer; color: #007bff;">Click
+                here to see
+                pricing</a>) --}}
+            </label>
+            <select name="v_model" id="product-name" class="form-control" required>
+              <option value=""></option>
+              <option value="Xeniaa" data-id="1">Xeniaa</option>
+              <option value="Your" data-id="2">Your</option>
+              <option value="Wind" data-id="3">Wind</option>
+              <option value="4U" data-id="4">4U</option>
+            </select>
+
+          </div>
+        </div>
+
+      </form>
+      <input type="checkbox" onchange="document.getElementById('covbookingBtn').disabled = !this.checked;" name='visto'
+        id='visto' />
+      <label>I have read and accept the <a
+          href="https://drive.google.com/file/d/1Eh3xZUWaz7nbLjUAj1emfQY3kVHHPAqF/view?usp=sharing">terms and
+          conditions</a>.</label>
+      <br>
+      <button class="btn c-green-bg covbookingBtn" id="covbookingBtn" disabled>Proceed</button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="pricing" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pricing</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+
+                  <th scope="col">Model</th>
+                  <th scope="col">Ex-showroom Price</th>
+                  <th scope="col">Price after discount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Xeniaa</th>
+                  <td>₹73,900</td>
+                  <td>₹73,900</td>
+
+                </tr>
+                <tr>
+                  <th scope="row">4U</th>
+                  <td>₹70,500</td>
+                  <td>₹67,500</td>
+
+                </tr>
+                <tr>
+                  <th scope="row">Wind</th>
+                  <td>₹54,900</td>
+                  <td>₹54,900</td>
+
+                </tr>
+                <tr>
+                  <th scope="row">Your</th>
+                  <td>₹51,900</td>
+                  <td>₹46,900</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

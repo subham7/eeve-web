@@ -1,0 +1,20 @@
+<h1 id="location"></h1>
+
+<!--Google Map APi Key-->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD378z_6KBKYSG3yfc6vqpMAfnnPLgLvHA">
+</script>
+<!--End Google Map APi-->
+
+<script>
+  function getLatLong() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        console.log("latitude: " + position.coords.latitude + "longitude: " + position.coords.longitude)
+        document.getElementById("location").innerHTML = "latitude: " + position.coords.latitude + ", " + "longitude: " + position.coords.longitude
+
+      })
+    }
+  }
+
+  getLatLong()
+</script>

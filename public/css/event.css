@@ -1,0 +1,101 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+@font-face {
+    font-family: Bebas Neue;
+    src: url("../fonts/BebasNeue.otf");
+}
+@font-face {
+    font-family: Gill Sans Light;
+    src: url("../fonts/GillSans-Light.ttf");
+}
+.body-wrapper {
+	overflow-x: hidden;
+}
+p {
+	line-height: 1.1em;
+	margin-bottom: 0.5em !important;
+}
+ul li {
+	line-height: 1.1em;
+}
+.top-part {
+	height: 40vh;
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+.bottom-part {
+	background-color: #000;
+	padding: 40px;
+}
+.top-background {
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5)
+}
+.top-part h1 {
+	letter-spacing: 5px;
+	color: #cd5c04;
+	font-family: Bebas Neue;
+	font-size: 6em;
+	position: relative;
+	top: 50px;
+	left: 50px;
+}
+.intro h3 {
+	font-family: Bebas Neue;
+	letter-spacing: 3px;
+}
+.detail p {
+	font-family: Gill Sans Light;
+}
+.detail h3 {
+	font-family: Bebas Neue;
+	letter-spacing: 3px;
+}
+.btn-container {
+	margin-right: 10px;
+}
+.reg-form {
+	width: 100%;
+	display: none;
+}
+footer {
+	background-color: #191919;
+	height: 80px;
+}
+.footer-content {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%), translateY(-50%);
+}
+
+/* sections */
+.tech-intro h3 {
+	color: #cd5c04;
+}
+.tech-detail p {
+	color: #fff;
+}
+.tech-detail h3 {
+	color: #cd5c04;
+}
+.tech-box {
+	height: 200px;
+	width: 200px;
+	background-color: #cd5c04;
+	display: table;
+	float: right;
+	margin-right: 30px;
+}
+.tech-box-text {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.tech-box h1 {
+	font-family: Bebas Neue;
+	color: #000;
+	font-size: 4em;
+}

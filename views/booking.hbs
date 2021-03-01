@@ -1,0 +1,100 @@
+<div class="body-wrapper">
+  <section class="booking-top"></section>
+  <section class="booking-topcontent c-blue-bg">
+    <div class="container">
+      <h1 class="c-white">Book an <span class="heavy-font c-green">EeVe</span></h1>
+      <p class="para-sm c-white">Book your EeVe for as low as INR 1000 and #RideIntoTheFuture. Don't worry, we'll refund
+        the entire amount if you change
+        your mind. No questions asked!</p>
+    </div>
+  </section>
+  <section class="booking-form">
+    <div class="container">
+      <form id="prebook-form">
+        <h3 class="c-green heavy-font">Select Your Location</h3><br>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>State</label>
+            <select name="state" class="form-control" required>
+              <option value=""></option>
+              <option value="1">Andhra Pradesh</option>
+              <option value="2">Bihar</option>
+              <option value="3">Jharkhand</option>
+              <option value="4">Odisha</option>
+              <option value="5">West Bengal</option>
+              <option value="6">Assam</option>
+              <option value="7">Chattisgarh</option>
+              <option value="8">Other</option>
+            </select>
+          </div>
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>City</label>
+            <input type="text" name="city" class="form-control" required />
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h3 class="c-green heavy-font">Personal Details</h3>
+        <p class="c-blue">Your personal details like email & Contact are very important. All the communication related
+          to your booking will be
+          made at your email, make sure to keep an eye.</p>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>First Name</label>
+            <input type="text" name="first_name" class="form-control" required />
+          </div>
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Last Name</label>
+            <input type="text" name="last_name" class="form-control" required />
+          </div>
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" required />
+          </div>
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Phone</label>
+            <input type="text" name="phone" class="form-control" minlength="10" maxlength="10" required />
+          </div>
+
+
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Address</label>
+            <input type="text" name="address" class="form-control" required />
+          </div>
+
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Pin</label>
+            <input type="text" name="pin" minlength="6" class="form-control" maxlength="6" required />
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h3 class="c-green heavy-font">Select Your Ride</h3>
+        <p class="c-blue">We've got you covered. Pick an EeVe that fits your needs.</p>
+        <div class="row">
+          <div class="col-md-4 col-sm-12 form-group">
+            <label>Model</label>
+            <select name="v_model" id="product-name" class="form-control" required>
+              <option value=""></option>
+              <option value="1" data-id="1">Xeniaa - </option>
+              <option value="2" data-id="2">Your</option>
+              <option value="3" data-id="3">Wind</option>
+              <option value="4" data-id="4">4U</option>
+            </select>
+
+          </div>
+        </div>
+
+      </form>
+      <button class="btn c-green-bg prebookBtn">Proceed</button>
+    </div>
+
+  </section>
+</div>
